@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon portefolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--la partie du bare de navigtion-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#" id="home" onclick="navigate()">Accueil</a>
+        <a href="portefolio.html#abt" id="res" onclick="navigate()">Résumé</a>
+        <a href="portefolio.html#exp" id="pf" onclick="navigate()"
+          >Porte-folio</a
+        >
+        <a href="portefolio.html#cont" id="ctn" onclick="navigate()">Contact</a>
+      </div>
+    </div>
+
+    <!--la partie du contenu de la page-->
+    <div class="contenu" id="cv">
+      <span id="navi" onclick="openNav()">&#9776;</span>
+      <h1 id="portfolio">Mon Porte-folio</h1>
+      <div class="slidesContainer">
+        <div class="slider">
+          <div class="slide" id="slide1">
+            <div class="slideCaption">
+              <h2>Bienvenu ...</h2>
+              <p>
+                Je m'appelle Dorra. J'ai 21 ans. Je suis tunisienne et j'habite
+                à Monastir qui est une agréable ville.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide" id="slide2">
+            <div class="slideCaption">
+              <p>
+                Je suis étudiante en Licence Fondamentale en Informatique de
+                Gestion à l'institut Supérieure de Gestion de Sousse et la
+                secretaire générale du club ISGs Microsoft Club
+              </p>
+            </div>
+          </div>
+          <div class="slide" id="slide3">
+            <div class="slideCaption">
+              <p>
+                Je vous remercie énormément pour votre visite et je crois que
+                vous allez aimer ce petit tour dans mon tout petit porte-folio
+              </p>
+            </div>
+          </div>
+          <div class="slide" id="slide4">
+            <div class="slideCaption">
+              <h2>Vous avez des questions !</h2>
+              <p>
+                Pas de problème Vous pouvez me contacter à n'importe quel moment
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about" id="abt">
+        <img id="dorra" src="images/myPic.jpg" alt="La photo de Dorra" />
+        <div class="aboutText">
+          <h2 id="nom">Dorra Kteib</h2>
+          <p>
+            Je suis une étudiante en Licence Fondamentale en Informatique de
+            Gestion à l'institut supérieure de Gestion de Sousse et secretaire
+            générale du club ISGs Microsoft club. J'ai 21 ans. Je suis
+            intéressée par le dévéloppement Web et Mobile. Je suis passionnée
+            par la lecture, le voyage, ... .
+          </p>
+        </div>
+      </div>
+
+      <div class="partie" id="exp">
+        <div class="titre">
+          <img src="images/exp.jpg" />
+          <h3>Expérience</h3>
+        </div>
+        <ul>
+          <li>
+            <span>Juillet 2019 - Aout 2019</span> : Stagiaire - Développeur
+            Front-end
+          </li>
+          <span class="place">Alt Tab Studios</span>
+          <li>
+            <span>Juillet 2018 - Aout 2018</span> : Stagiaire - Agent
+            technico-commerciale
+          </li>
+          <span class="place">Trésorerie Régionale des Finances </span>
+        </ul>
+      </div>
+
+      <hr />
+      <br />
+      <div class="partie" id="for">
+        <div class="titre">
+          <img src="images/21195-graduation-cap-circular-button1.png" />
+          <h3>Formation</h3>
+        </div>
+
+        <ul>
+          <li>
+            <span>2017 - 2020 </span> : Licence Fondamentale en Informatique de
+            Gestion
+          </li>
+          <span class="place">Institut Supèrieur de Gestion de Sousse</span>
+          <li><span>2017</span> : Baccalauréat Mathématiques</li>
+          <span class="place">Lycée Bourguiba Monastir </span>
+        </ul>
+      </div>
+
+      <hr />
+      <br />
+      <div class="partie" id="certif">
+        <div class="titre">
+          <img src="images/certif.png" />
+          <h3>Certification</h3>
+        </div>
+        <div class="cerificatesContainer">
+          <div class="certificate">
+            <img src="images/microsoft.png" alt=>
+            <div class="certifDescription">
+              <h5>MTA: HTML5 Application Development Fundamentals</h5>
+              <p>Microsoft</p>
+              <p>Délivré en Juin 2019</p>
+              <p>ID du diplôme: wAsNk-22xq</p>
+            </div>
+          </div>
+
+          <div class="certificate">
+            <img src="images/microsoft.png" alt=>
+            <div class="certifDescription">
+              <h5>MTA: Introduction to Programming using JavaScript</h5>
+              <p>Microsoft</p>
+              <p>Délivré en Juin 2019</p>
+              <p>ID du diplôme: Ud9Q-sFcm</p>
+            </div>
+          </div>
+
+          <div class="certificate">
+            <img src="images/microsoft.png" alt=>
+            <div class="certifDescription">
+              <h5>MTA: Introduction to Programming using HTML and CSS</h5>
+              <p>Microsoft</p>
+              <p>Délivré en Mai 2019</p>
+              <p>ID du diplôme: dJK2-DwQN</p>
+            </div>
+          </div>
+
+          <div class="certificate">
+            <img src="images/microsoft.png" alt=>
+            <div class="certifDescription">
+              <h5>MTA: Introduction to Programming using Java</h5>
+              <p>Microsoft</p>
+              <p>Délivré en Mai 2019</p>
+              <p>ID du diplôme: ubCw-XMhM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <br />
+      <div class="partie" id="skills">
+        <div class="titre">
+          <img src="images/skills.png" />
+          <h3>Compétences</h3>
+        </div>
+        <div class="skillsContainer">
+          <table>
+            <tr>
+              <td class="competence">Java</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 80%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">javascript</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 75%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Html 5</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 60%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Css</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 65%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Flutter</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 50%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Android</td>
+              <td class="skillProgCase">
+                <div class="skillProg">
+                  <span style="width: 57%"></span>
+                </div>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="competence">Visual Basic .Net</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 70%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Git</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 45%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">C</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 45%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">Php</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 30%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">SQL</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 60%"></span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="competence">UML</td>
+              <td>
+                <div class="skillProg">
+                  <span style="width: 66%"></span>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <hr />
+      <br />
+      <div class="partie" id="projet">
+        <div class="titre">
+          <img src="images/projects.png" />
+          <h3>Projets</h3>
+        </div>
+        <br />
+
+        <div class="projectContainer">
+          <div class="project">
+            <img src="images/goDoctor.jpg" alt="goDoctor" />
+            <div class="projectText">
+              <h4>Go Doctor</h4>
+              <p>
+                C'est une application mobile qui permet à son utilisateur de
+                gérer les rendez-vous au prés du cabinet d'un médecin
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/university.png" alt="University" />
+            <div class="projectText">
+              <p>
+                C'est une application desktop qui permet de gérer un
+                établissement universitaire afin de pouvoir génerer le relevé de
+                note pour chaque étudiant
+              </p>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/info.png" alt="Info" />
+            <div class="projectText">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                in ex! Facilis architecto natus similique explicabo nisi. Iusto
+                quod explicabo ipsum, tenetur, veniam debitis eveniet,
+                dignissimos possimus suscipit consequuntur omnis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <br />
+        <div class="partie" id="lang">
+          <div class="titre">
+            <img src="images/lang.svg" />
+            <h3>Langues</h3>
+          </div>
+          <div class="skillsContainer" id="langContainer">
+            <table>
+              <tr>
+                <td class="competence">Arabe</td>
+                <td class="skillProgCase">
+                  <div class="skillProg">
+                    <span style="width: 100%"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="competence">Français</td>
+                <td class="skillProgCase">
+                  <div class="skillProg">
+                    <span style="width: 75%"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="competence">Anglais</td>
+                <td class="skillProgCase">
+                  <div class="skillProg">
+                    <span style="width: 60%"></span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <hr />
+        <br />
+        <div class="contactContainer" id="cont">
+          <h1>Me contacter !</h1>
+          <div class="contact">
+            <div class="inner-contact">
+              <img src="images/map-marker-alt-solid.png" alt="Adresse" />
+              <p>
+                Cité Tbaka Skanes<br />
+                Monastir 5000, Tunisie
+              </p>
+            </div>
+            <div class="inner-contact">
+              <img src="images/envelope-regular.png" alt="Email" />
+              <p>dorrakteib1@gmail.com</p>
+            </div>
+            <div class="inner-contact">
+              <img src="images/phone-volume-solid.png" alt="Phone" />
+              <p>+216 58 667 087</p>
+            </div>
+          </div>
+
+          <div class="form" name="form">
+            <div class="form-title">
+              Laissez votre precieux message
+            </div>
+            <div class="input-form">
+              <div class="field">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  id="email"
+                  maxlength="50"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  placeholder="Objet"
+                  id="objet"
+                  maxlength="50"
+                />
+              </div>
+            </div>
+            <div class="inner-msg">
+              <div class="msg">
+                <textarea placeholder="Message" id="msg"></textarea>
+              </div>
+            </div>
+            <input type="button" value="Envoyer" id="btn" onclick="send()" />
+          </div>
+
+          <div class="social">
+            <div class="inner-social">
+              <a href="https://www.facebook.com/kteibdorra">
+                <img src="images/facebook-brands.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/twitter-brands.png" alt="" />
+              </a>
+              <a href="https://www.linkedin.com/in/dorra-kteib-b4430816a/">
+                <img src="images/linkedin-in-brands.png" alt="" />
+              </a>
+            </div>
+            <div class="inner-social">
+              <a href="">
+                <img src="images/google-plus-g-brands.png" alt="" />
+              </a>
+              <a href="https://www.instagram.com/dorra_kteib/?hl=fr">
+                <img src="images/instagram-brands.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
